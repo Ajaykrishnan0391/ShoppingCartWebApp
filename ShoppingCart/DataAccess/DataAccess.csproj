@@ -47,6 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201809240839098_InitialCreate.cs" />
+    <Compile Include="Migrations\201809240839098_InitialCreate.Designer.cs">
+      <DependentUpon>201809240839098_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809261217243_ModelContextDV-v1.cs" />
+    <Compile Include="Migrations\201809261217243_ModelContextDV-v1.Designer.cs">
+      <DependentUpon>201809261217243_ModelContextDV-v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809271033088_v2.cs" />
+    <Compile Include="Migrations\201809271033088_v2.Designer.cs">
+      <DependentUpon>201809271033088_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809271040100_v3.cs" />
+    <Compile Include="Migrations\201809271040100_v3.Designer.cs">
+      <DependentUpon>201809271040100_v3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809271202000_v4.cs" />
+    <Compile Include="Migrations\201809271202000_v4.Designer.cs">
+      <DependentUpon>201809271202000_v4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809271204132_v5.cs" />
+    <Compile Include="Migrations\201809271204132_v5.Designer.cs">
+      <DependentUpon>201809271204132_v5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809281143187_V6.cs" />
+    <Compile Include="Migrations\201809281143187_V6.Designer.cs">
+      <DependentUpon>201809281143187_V6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +88,29 @@
       <Project>{8C2ECC24-3F71-4981-B56E-B3EC8E2E9906}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809240839098_InitialCreate.resx">
+      <DependentUpon>201809240839098_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809261217243_ModelContextDV-v1.resx">
+      <DependentUpon>201809261217243_ModelContextDV-v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809271033088_v2.resx">
+      <DependentUpon>201809271033088_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809271040100_v3.resx">
+      <DependentUpon>201809271040100_v3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809271202000_v4.resx">
+      <DependentUpon>201809271202000_v4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809271204132_v5.resx">
+      <DependentUpon>201809271204132_v5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809281143187_V6.resx">
+      <DependentUpon>201809281143187_V6.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

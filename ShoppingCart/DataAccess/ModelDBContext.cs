@@ -12,8 +12,18 @@ namespace DataAccess
     {
         public ModelDBContext() : base("ShoppingCart")
         {
-
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ModelDBContext, Migrations.Configuration>());
+            //Database.SetInitializer(new DropCreateDatabaseAlways<ModelDBContext>());
+            //Database.Delete();
+            //Database.Create();
         }
         public IDbSet<Product> Products { get; set; }
+        public IDbSet<Category> Categories { get; set; }
+        public IDbSet<ProductCategory> ProductCategories { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("Practice");
+
+        }
     }
 }
